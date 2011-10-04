@@ -5,6 +5,11 @@ return array(
             'alias' => array(
                 'bugs' => 'Bugs\Controller\BugsController',
             ),
+            'bugs' => array(
+                'parameters' => array(
+                    'entityManager' => 'Doctrine\ORM\EntityManager',
+                ),
+            ),
             'Zend\View\PhpRenderer' => array(
                 'methods' => array(
                     'setResolver' => array(
